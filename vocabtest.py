@@ -42,7 +42,7 @@ def guess_definitions(current):
 def correct_or_naw(current):
     #If you guessed correctly you will not be retested on that.
     response = input("> ")
-    if response == "no":
+    if response.lower() == "no" or response.lower() == 'n':
         print("That's too bad! We will retest you on this later.")
         keys.insert(0, current)
     else:
