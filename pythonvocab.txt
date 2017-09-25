@@ -1,0 +1,82 @@
+floating point number, 4.0
+round(), round a number
+string, a immutable sequence of characters
+immutable, once defined it cannot be changed
+%r, used for debugging because it displays the raw data of the variable
+%s, used for a string
+%d, string formatting, used for a digit
+3.6 string formatting, x = f'here is a {interesting} strings
+.format(), python 3.6 string formatting for strings that already exist
+\n, new line character inside of a string
+escape sequence, encoding difficult-to-type characters in a string using \
+\t, tab character inside of a string
+\\, backslash character inside of a string
+input(), requests input from the terminal user
+end=' ', tells the print function to not end the line with a newline character
+int(), converts to an integer
+open(), preferred way to open a file
+.close(), closes a file object
+.read(), reads the contents of a file
+.readline(), reads just one line of a text file
+.truncate(), empties the file
+.write('stuff'), writes 'stuff' to the file
+.seek(0), move the read/write location to the beginning of a file
+function, names pieces of code, takes arguments, executes commands.
+.strip(), strips chars out of a string, default whitespace
+.encode(), stores the computer equivalent of that character in bytes
+byte, a sequence of 8 bits
+DBES, Decode Bytes Encode Strings
+sorted(), sorted in alphanumeric order by default
+%, divides left operand by right operand and returns remainder
+**, exponential calculation on operators
+==, equals
+!=, not equal
+>=, greater than or equal to
+<=, less than or equal to
++=, adds right operand to the left operand and assigns result to left operand
+-=, subtracts right operand from left operand and assigns result to left operand
+.append(), places new item at end of a list
+range(), generates a list of numbers, usually used to iterate over with for loops
+list.insert(), inserts an item at a given position.
+list.remove(), removes the first item from the list with a specific value. Error if none.
+list.pop(), remove the item at a specific position in list and return it. Default last item in list.
+list.clear(), removes all items from list
+list.count(), return number of times item appears in list
+ordinal numbers, indicate an ordering of things, first second third
+cardinal numbers, based on an index or list, 1 less than the ordinal number
+.isdigit(), is this number a digit? True or False
+break, stop this loop right now!
+continue, don't process more of the loop, do it again
+del X[Y], delete from dictionary
+except, if an exception happens, do this
+exec, run a string as Python.
+global, declare that you want a global variable
+from, imports specific parts of a module
+for, loops over a collection of things
+import, import a module into this one to use
+lambda, create a short anonymous function
+pass, this block is empty
+raise, raise an exception when things go wrong
+try, try this block and if something goes wrong go to except
+yield, pause here and return to caller
+list, a = [1, 2, 3, 4]
+dict, e = {'x: 1, 'y': 2, 'z': 3}
+instantiate, create an object from a class
+class, tells python to make a new type of thing
+object, two meanings: the most basic type of thing and any instance of some thing
+instance, what you get when you tell Python to create a class
+def, how you define a function
+self, inside the functions in a class, self is a variable for the instance or object being accessed
+inheritance, one class can inherit traits from another class
+composition, a class can be composted of other classes as parts
+attribute, a property classes have that are from composition and are usually variables
+is-a, means something inherits from another, like 'salmon' is-a 'fish'
+has-a, means that something is composed of other things or has a train, like 'salmon' has-a 'mouth'
+class X(Y), Make a class named X that is-a Y
+class X(object): def__init__(self,J), class X has-a __init__that takes self and J parameters
+class X(object): def M(self, J), class X has-a function named M that takes self and J parameters
+foo - X(), Set foo to an instance of class X
+foo.M(J), From foo, get the M function, and call it with parameters self, J
+foo.K = Q, From foo, get the K attribute, and set it to Q
+octothorpe, # comments out a line
+modulus, %, used only in division. Returns remainder of the division
