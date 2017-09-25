@@ -4,6 +4,7 @@ import random
 vocabdict = {}
 
 def create_vocab_dict(txtfile):
+    #creates a dictionary of vocab from your text file
     vocabtxt = open(txtfile)
     nextvocab = vocabtxt.readline().strip("\n")
     print(nextvocab)
@@ -39,6 +40,7 @@ def guess_definitions(current):
     print("Did you answer correctly?")
 
 def correct_or_naw(current):
+    #If you guessed correctly you will not be retested on that.
     response = input("> ")
     if response == "no":
         print("That's too bad! We will retest you on this later.")
@@ -48,18 +50,21 @@ def correct_or_naw(current):
 
 
 def vocab(txtfile):
+    #Given a vocab word you must guess the right definition.
     while keys:
         current = keys.pop()
         guess_vocab(current)
         correct_or_naw(current)
 
 def definitions(txtfile):
+    #Given a vocab word you must guess the right definition.
     while keys:
         current = keys.pop()
         guess_definitions(current)
         correct_or_naw(current)
 
 def mixture(txtfile):
+    #Sometimes you are given a vocab word and sometimes you are given a definition.
     while keys:
         current = keys.pop()
         guess_vocab(txtfile, current)
