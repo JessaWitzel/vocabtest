@@ -45,8 +45,11 @@ def correct_or_naw(current):
     if response.lower() == "no" or response.lower() == 'n':
         print("That's too bad! We will retest you on this later.")
         keys.insert(0, current)
-    else:
+    elif response.lower() == "yes" or response.lower() == "y":
         print("Great job! We won't test you on that again.")
+    else:
+        print("Sorry, I do not understand that. Please respond with 'yes' or 'no'.")
+        correct_or_naw(current)
 
 
 def vocab(txtfile):
