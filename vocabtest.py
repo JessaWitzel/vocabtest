@@ -7,7 +7,6 @@ def create_vocab_dict(txtfile):
     #creates a dictionary of vocab from your text file
     vocabtxt = open(txtfile)
     nextvocab = vocabtxt.readline().strip("\n")
-    print(nextvocab)
     while nextvocab != "":
         key, value = nextvocab.split(", ", 1)
         vocabdict[key] = value
@@ -16,8 +15,14 @@ def create_vocab_dict(txtfile):
 print("""Welcome to the vocab game!
         Please enter the text file that contains your vocabulary.
         Vocab words should be separated from their definitions by a comma.
-        """)
-txtfile = input("> ")
+        If you would like to use the default Python vocab list press Enter""")
+
+vocabfile = input("> ")
+if vocabfile != "":
+    txtfile = vocabfile
+else:
+    txtfile = "pythonvocab.txt"
+
 create_vocab_dict(txtfile)
 print("""Would you like to be shown the vocab,
         the definitions, or a mixture of both?
